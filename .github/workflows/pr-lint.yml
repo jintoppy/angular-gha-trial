@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Pull Request Linter
-        uses: MorrisonCole/pr-lint-action@v1.6.1
+        uses: seferov/pr-lint-action@master
         with:
             title-regex: '\[GTP-\d{1,3}\]\s(.+){5,}'
-            on-failed-regex-comment: 'Please add a valid title in format `[<story>] <description>` for eg. `[GTP-1] Adding user login details`'
+            error-message: 'Please add a valid title in format `[<story>] <description>` for eg. `[GTP-1] Adding user login details`'
